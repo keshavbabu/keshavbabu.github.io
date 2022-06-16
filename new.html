@@ -1,0 +1,72 @@
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<div class="content">
+		<div class="page main">
+			<h1>Hi I'm <div style="color: rgb(255, 124, 0);">Keshav Babu.</div></h1>
+			<a class="button" href="#2">learn about me</a>
+		</div>
+		<div id="2" class="page">
+			<div class="post">
+			<div class="box">
+								<div class="image left"><img src="images/pic09.jpg" alt="" />
+								</div>
+								<h3>
+								Currently...
+							</h3>
+								<p>In addition to studying Computer Engineering and Math at Michigan State, I also currently am spending my time learning Swift through Apple's <a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a>. My most current project is called DashPad. qeoifnbeqfnqeqefqefqffqeq</p>
+							</div>
+						</div>
+	</div>
+<style>
+body {
+  width: 100%;
+  margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.post{
+	background-color: white;
+	padding: 30px;
+}
+
+h1 {
+	color: white;
+}
+
+body .content {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-points-y: repeat(300px);
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
+  overflow: auto;
+}
+
+body .main{
+	font-family: 'Source Sans Pro', serif;
+	font-size: 48px;
+	background-image: url("images/bg.jpg");
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .page {
+  
+	
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+</style>
+</html>
+
