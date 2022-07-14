@@ -20,6 +20,19 @@ img.center {
 	margin: 0 auto;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang {
+	border-radius: 5px;
+	background-color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 .glob {
 	background-color: white;
 	width: 80%;
@@ -75,6 +88,7 @@ body .page {
 </style>
 <body>
 	<div class="content">
+		
 <div class="page main">
    <h1>
       Hi I'm 
@@ -91,13 +105,19 @@ body .page {
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 		<div class="modal-header">
-        <h2 class="modal-title">Modal title</h2>
+        <h2 class="modal-title">My Story</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
 	</div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        <p>I've had a passion for programming since Scratch was introduced to us in elementary school. Creating games with some friends became a daily passion that has manifested into a passion for programming and learning about computers that has shaped who I am today. </p>
+		<p>
+			 I spent my time in middle school doing robotics where I got to learn about communication and teamwork. My experience not only gave me a very good platform to better my skills as a programmer but also helped me understand how I had to change my methods to ensure that the team always came first. I developed the software that ran our robot and qualified us for states all 3 years. During my time I got very familiar with Java which was the language that ran our robot.
+		 </p>
+		 <p>
+			 In highschool, I spent my time working on projects for my family. I spent a lot of my time with my Raspberry Pi that had running webservers 24/7. I had discovered how to host websites and immediately learned as much as I could about HTML, Javascript, JQuery, and CSS. Once I discovered PHP and the ability to interact with the actual computer using a website I began learning about C++, Bash, Python, and all those small scripting languages like Visual Basic Script.
+		 </p>
 	</div>
     </div>
   </div>
@@ -106,20 +126,35 @@ body .page {
 	<h1>
             A Little About Me
 		</h1>
+		<h3>
+			Hi! I am currently a sophmore at Michigan State University planning on majoring in Computer Science and Math.
+		</h3>
       <div class="glob">
 		  <div class="image left"><img src="images/pic09.jpg" alt="picture of me!" /></div>
-         Hi! I am currently a sophmore at Michigan State University studying Computer Science. I enjoy 
+         <p>Currently, I'm developing projects and learning as much as I can about industry-level software engineering while fueling my passion for using my skills to make life easier and more enjoyable for me and my friends. The past couple years I have spent exploring different aspects of Engineering that helped me understand more about computers and the future of technology (AI and Machine Learning and all that cool stuff).
+		 </p>
+		 <p>
+			 The projects I have here are the ones I'm most passionate about and all of them have a reason for why I made them. I hope one day to be able to say that I get to do what I love as my career and I'm extremely excited to see what the future has for me.
+		 </p>
 	 </br>
-		 <button type="button" onClick="toggleModal('#ragavsmells')" class="btn btn-outline-primary">Even More About Me</button>
+	 <div class="center">
+		 <button type="button" onClick="toggleModal('#ragavsmells')" class="btn btn-outline-primary">My Story</button>
+	 </div>
 		 <ul align="center" class="icons">
 							<li><a href="https://twitter.com/keshavjbabu" class="icon brands fa-twitter" target="_blank" rel="noopener noreferrer"><span class="label">Twitter</span></a></li>
 							<li><a href="https://www.linkedin.com/in/keshav-babu-589aa61b8/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://github.com/keshavbabu" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
 						</ul>
+						
       </div>
- </br>
+  </br>
+  <div class="glob center">
+  <div class="center" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e5b02937-3e75-497c-bbf1-1d435b77c865" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+</div>
+ <!-- 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
+	  
 	  
     <div class="carousel-item active">
 	<div class="globwrapper">
@@ -180,6 +215,7 @@ body .page {
 	 </div>
  </div>
     </div>
+	
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -190,26 +226,74 @@ body .page {
     <span class="sr-only">Next</span>
   </a>
 </div>
+ -->
+</div>
+<div id="draft" class="page">
+	<h1>
+		DraftNight
+	</h1>
+	<h3>
+		<span class="lang">Web App</span>
+		<span class="lang">NodeJS</span>
+		<span class="lang">React</span>
+		<span class="lang">Javascript/JQuery</span>
+		<span class="lang">HTML/CSS</span>
+	</h3>
+	<div class="glob">
+		<p>
+			As I got more into football and fantasy sports, I realised the lack of simple, free resources that existed for kids just wanting to add a bit their own competition into the sport. I sat with my friends every year experiencing our "homemade" draft that consisted of a google sheet atempting to track each pick and the organise the information about each player.</p>
+			<p> Every year someone else in my friend group would have to run the draft and it became more of a job rather than a fun night. Having to compile a list of all availible players manually. Having to manually type out every person's pick when they chose someone.
+		</p>
+		<p>
+			These things made fantasy football that much more of a hassle than it should have been and so I decided to tackle the issue myself.
+		</p>
+	</div>
+</br>
+
 </div>
 <div id="macro" class="page">
 	<h1>
 		MacroTracker
 	</h1>
+	<h3>
+		<span class="lang">iOS App</span>
+		<span class="lang">Swift</span>
+	</h3>
+</div>
+<div id="campus" class="page">
+	<h1>
+		CampusTutor
+	</h1>
+	<h3>
+		<span class="lang">Web App</span>
+		<span class="lang">Python</span>
+		<span class="lang">Flask</span>
+		<span class="lang">HTML/CSS</span>
+		<span class="lang">Javascript</span>
+		<span class="lang">CockroachDB</span>
+	</h3>
 </div>
 <div id="cpp" class="page">
 	<h1>
 		LearnC++
 	</h1>
-</div>
-<div id="this" class="page">
-	<h1>
-		DraftNight
-	</h1>
+	<h3>
+		<span class="lang">Website</span>
+		<span class="lang">Azure</span>
+		<span class="lang">HTML/CSS</span>
+		<span class="lang">NodeJS</span>
+		<span class="lang">Javascript/JQuery</span>
+	</h3>
 </div>
 <div id="this" class="page">
 	<h1>
 		This Site
 	</h1>
+	<h3>
+		<span class="lang">Website</span>
+		<span class="lang">HTML/CSS</span>
+		<span class="lang">Javascript/JQuery</span>
+	</h3>
 </div>
 </div>
 	<script src="assets/js/jquery.min.js"></script>
@@ -224,7 +308,7 @@ body .page {
 	for(var i = 0; i < pages; i++){
 		var color = [];
 		for(var j = 0; j < 3; j++){
-			color.push(Math.floor(Math.random() * (255 - 0 + 1) + 0));
+			color.push(Math.floor(Math.random() * (255 - 35 + 1) + 35));
 		}
 		palette.push(color);
 	}
