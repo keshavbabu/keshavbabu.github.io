@@ -1,123 +1,477 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Home Page - Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<script src="https://unpkg.com/@stackoverflow/stacks-icons"></script>
-		<!-- Wrapper -->
-			<div id="wrapper">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<style>
+body {
+  width: 100%;
+  margin: 0;
+  overflow: none;
+}
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Keshav Babu</a>
-					</header>
+html {
+	scroll-behavior: smooth;
+}
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul align="center"  class="links">
-							<li class="active"><a href="index.html">Home Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul align="center" class="icons">
+img.center {
+	display: block;
+	margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.lang {
+	border-radius: 5px;
+	background-color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.glob {
+	background-color: white;
+	width: 90vw;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.post{
+	background-color: white;
+	padding: 30px;
+}
+
+h1 {
+	color: white;
+}
+
+body .content {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-points-y: repeat(300px);
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
+  overflow: auto;
+}
+
+body .main{
+	font-family: 'Source Sans Pro', serif;
+	font-size: 48px;
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .page {
+	background-color: rgba(0, 0, 0, 1);
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  	display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.globwrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gridwrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.header {
+	position: sticky;
+	top:0;
+	z-index: 1;
+	width: 100%;
+}
+
+.progresscontainer {
+	background-color: rgba(0, 0, 0, 1);
+	width: 100%;
+	height: 8px;
+}
+
+.progressbar {
+	height: 8px;
+	background: white;
+	width: 0%;
+}
+</style>
+<div class="header">
+	<div class="progresscontainer">
+		<div class="progressbar"></div>
+	</div>
+</div>
+<body>
+	<div class="content">
+		
+<div class="page main">
+	
+   <h1>
+      Hi I'm 
+      <div style="color: rgb(255, 124, 0);">Keshav Babu.</div>
+   </h1>
+   <button type="button" onClick="smoothScroll('#second')" class="btn btn-outline-primary">
+   <h2  style="color: white;">&darr;Scroll&darr;</h2>
+   </button>
+   
+</div>
+<div id="second" class="page">
+	
+	<div class="modal fade bd-example-modal-lg" id="ragavsmells" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+		<div class="modal-header">
+        <h2 class="modal-title">My Story</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+	</div>
+      <div class="modal-body">
+        <p>I've had a passion for programming since Scratch was introduced to us in elementary school. Creating games with some friends became a daily passion that has manifested into a passion for programming and learning about computers that has shaped who I am today. </p>
+		<p>
+			 I spent my time in middle school doing robotics where I got to learn about communication and teamwork. My experience not only gave me a very good platform to better my skills as a programmer but also helped me understand how I had to change my methods to ensure that the team always came first. I developed the software that ran our robot and qualified us for states all 3 years. During my time I got very familiar with Java which was the language that ran our robot.
+		 </p>
+		 <p>
+			 In highschool, I spent my time working on projects for my family. I spent a lot of my time with my Raspberry Pi that had running webservers 24/7. I had discovered how to host websites and immediately learned as much as I could about HTML, Javascript, JQuery, and CSS. Once I discovered PHP and the ability to interact with the actual computer using a website I began learning about C++, Bash, Python, and all those small scripting languages like Visual Basic Script.
+		 </p>
+	</div>
+    </div>
+  </div>
+</div>
+
+	<h1>
+            A Little About Me
+		</h1>
+		<h3>
+			Hi! I am currently a sophmore at Michigan State University
+		</h3>
+		<h3>
+			 planning on majoring in Computer Science and Math.
+		</h3>
+      <div class="glob">
+		  <div class="image left"><img src="images/pic09.jpg" alt="picture of me!" /></div>
+         <p>Currently, I'm developing projects and learning as much as I can about industry-level software engineering while fueling my passion for using my skills to make life easier and more enjoyable for me and my friends. The past couple years I have spent exploring different aspects of Engineering that helped me understand more about computers and the future of technology (AI and Machine Learning and all that cool stuff).
+		 </p>
+		 <p>
+			 The projects I have here are the ones I'm most passionate about and all of them have a reason for why I made them. I hope one day to be able to say that I get to do what I love as my career and I'm extremely excited to see what the future has for me.
+		 </p>
+	 <div class="center">
+		 <button type="button" onClick="location.href='https://www.credly.com/users/keshav-babu/';" class="btn btn-outline-primary">Credly</button>
+		 <button type="button" onClick="toggleModal('#ragavsmells')" class="btn btn-outline-primary">My Story</button>
+		 <button type="button" onClick="location.href='https://docs.google.com/document/d/1sb_IwKlNZ6K4Kbob1vZDLkZZDOIuKUVHOgMx8vEvQDw/edit?usp=sharing';" class="btn btn-outline-primary">My Resume</button>
+	 </div>
+		 <ul align="center" class="icons">
 							<li><a href="https://twitter.com/keshavjbabu" class="icon brands fa-twitter" target="_blank" rel="noopener noreferrer"><span class="label">Twitter</span></a></li>
 							<li><a href="https://www.linkedin.com/in/keshav-babu-589aa61b8/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://github.com/keshavbabu" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
 						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
 						
-						<!-- Post -->
-							<section class="post">
-								<ul align="center" class="icons">
-							<li><a href="https://twitter.com/keshavjbabu" class="icon brands fa-twitter" target="_blank" rel="noopener noreferrer"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.linkedin.com/in/keshav-babu-589aa61b8/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/keshavbabu" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-						</ul>
-								<header class="major">
-									<h1>Hi, I'm Keshav!</h1>
-									<p>I'm student at Michigan State University studying Computer Engineering and Math</p>
-								</header>
-								<ul class="actions fit">
-										<li><a href="#" class="button fit">Resume</a></li>
-										<li><a href="#" class="button fit">Projects</a></li>
-									</ul>
-									<div class="box">
-								<div class="image left"><img src="images/pic09.jpg" alt="" /></div>
-								<h3>
-								Currently...
-							</h3>
-								<p>In addition to studying Computer Engineering and Math at Michigan State, I also currently am spending my time learning Swift through Apple's <a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a>. My most current project is called DashPad.</p>
-							</div>
-							<div class="box">
-								<div class="image right"><img src="images/pic09.jpg" alt="" /></div>
-								<h3>
-									In The Past...
-								</h3>
-								<p>
-									I have worked with Objective-C on projects that run on jailbroken versions of iOS. I have all my code open sourced on my Github for other developers to look at and hopefully to help beginners get started.
-								</p>
-							</div>
-							<div class="box">
-								<h3>
-									I Hope To...
-								</h3>
-								<p>
-									I hope to gain experience and sharpen my skills to learn more about Software Development, Cyber security and Artificial Intelligence.
-								</p>
-							</div>
-							</section>
+      </div>
+  </br>
+  
+</div>
 
-					</div>
+<div id="draft" class="page">
+	<h1>
+		DraftNight
+	</h1>
+	<h4>
+			Free. Simple. Aesthetic. Enjoy the draft without the hassle
+		</h4>
+	<h3>
+		<span class="lang">Web App</span>
+		<span class="lang">NodeJS</span>
+		<span class="lang">React</span>
+		<span class="lang">Javascript/JQuery</span>
+		<span class="lang">HTML/CSS</span>
+	</h3>
+	<div class="glob">
+		<p>
+			As I got more into football and fantasy sports, I sat with my friends every year experiencing our "homemade" draft that consisted of a google sheet attempting to track each pick and the organise the information about each player. Every year someone else in my friend group would have to run the draft and it became more of a job rather than a fun night.
+		</p>
+		<p>
+			DraftNight is a web app that allows people to easily draft for fantasy football and then allows for easy exporting of the data to make the job of the league manager a lot easier.
+		</p>
+		<div class="center">
+		 <button type="button" onClick="location.href='https://github.com/keshavbabu/DraftNight';" class="btn btn-outline-primary">View on Github</button>
+		 <button type="button" onClick="location.href='https://github.com/keshavbabu';" class="btn btn-outline-primary">Visit Web App</button>
+	 </div>
+ </br>
+	</div>
+</br>
+<div class="globwrapper">
+      <div class="glob">
+		  <h3 style="text-align: center">
+			  Auto-Updating Players
+		  </h3>
+         <p>Current year player data is pulled automatically which avoids having to compile a list of the current years fantasy players by hand</br></p>
+	 </div>
+ </div> 
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Phone</h3>
-								<p><a href="tel:734-892-6079">(734) 892-6079</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto: keshavjbabu@gmail.com">keshavjbabu@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons">
-							<li><a href="https://twitter.com/keshavjbabu" class="icon brands fa-twitter" target="_blank" rel="noopener noreferrer"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.linkedin.com/in/keshav-babu-589aa61b8/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/keshavbabu" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-						</ul>
-							</section>
-						</section>
-					</footer>
+</div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+<div id="macro" class="page">
+	<h1>
+		MacroTracker
+	</h1>
+	<h4>
+		Complex Tracking, Simplified
+		</h4>
+	<h3>
+		<span class="lang">iOS App</span>
+		<span class="lang">Swift</span>
+	</h3>
+	<div class="glob">
+		<p>
+			During quarantine, I started going to the gym since my Track and Field season was cancelled. Tracking Macronutrients is one aspect of working out that I always struggled with in my first year and the existing apps did little to help me as a beginner. I spent hours and hours researching what the best types of food to eat and the ideal amount of food I should be eating.
+		</p>
+		<p>
+			MacroTracker is an app I built to help beginners start out at the gym without making it complicated. It tracks macronutrients and calories easily by a simple search bar and 1 click.
+		</p>
+		<div class="center">
+		 <button type="button" onClick="location.href='https://github.com/keshavbabu/MacroTracker';" class="btn btn-outline-primary">View on Github</button>
+	 </div>
+ </br>
+	</div>
+</br>
+<div class="globwrapper">
+      <div class="glob">
+		  <h3 style="text-align: center">
+			  ESHA Reasearch API Integration
+		  </h3>
+         <p>All data is pulled straight from the ESHA database which is a very large collection of nutritional information that is used by apps such as MyFitnessPal</br></p>
+	 </div>
+ </div> 
+</div>
 
-			</div>
+<div id="campus" class="page">
+	<h1>
+		CampusTutor
+	</h1>
+	<h4>
+		SpartaHack 2022 Winner "Best Hack for Education"
+	</h4>
+	<h4>
+		Learn from people you know
+		</h4>
+	<h3>
+		<span class="lang">Web App</span>
+		<span class="lang">Python</span>
+		<span class="lang">Flask</span>
+		<span class="lang">HTML/CSS</span>
+		<span class="lang">Javascript</span>
+		<span class="lang">MySQL</span>
+	</h3>
+	<div class="glob">
+		<p>
+			I have seen firsthand very intelligant students have their GPA be ruined by a professor or lack of resources. There are so many students around the world learning exactly what you may be learning right now. So why is it sometimes so difficult to find information?
+		</p>
+		<p>
+			CampusTutor makes student to student connections to allow everyone to learn from as well as teach their peers. it only seems best to learn from others who have figured it out and mastered it in a way that you would understand.
+		</p>
+		<div class="center">
+		 <button type="button" onClick="location.href='https://github.com/AKS820/CampusTutor';" class="btn btn-outline-primary">View on Github</button>
+		 <button type="button" onClick="location.href='https://devpost.com/software/campus-tutor';" class="btn btn-outline-primary">View on DevPost</button>
+	 </div>
+ </br>
+	</div>
+</br>
+<div class="globwrapper">
+      <div class="glob">
+		  <h3 style="text-align: center">
+			  Auth0 Integration
+		  </h3>
+         <p>Storing passwords is something I will always attempt to avoid. It is pointless to make somebody yet another account when they already have so many. Auth0 allows us to say that we store absolutely no passwords!</p>
+	 </div>
+ </div> 
+</div>
+<div id="cpp" class="page">
+	<h1>
+		LearnC++
+	</h1>
+	<h4>
+	Putting more emphasis on intro in "intro course"
+	</h4>
+	<h3>
+		<span class="lang">Website</span>
+		<span class="lang">Azure</span>
+		<span class="lang">HTML/CSS</span>
+		<span class="lang">NodeJS</span>
+		<span class="lang">Javascript/JQuery</span>
+	</h3>
+	<div class="glob">
+		<p>
+			My first year at Michigan State I took the introductory course for Computer Science. During my time in this course and talking to my peers I found that many people were not doing very well in it. My disappointment in the course peaked when I heard a lot of kids saying that they might switch their major because of the difficulty.
+		</p>
+		<p>
+			LearnC++ is a simple website that goes over the basics of C++ and helps you understand it on a fundamental level. It explains all of the concepts in layman's terms which are perfect for even the complete beginner.
+		</p>
+		<div class="center">
+		 <button type="button" onClick="location.href='https://github.com/keshavbabu/learncpp';" class="btn btn-outline-primary">View on Github</button>
+		 <button type="button" onClick="location.href='https://learncpp.azurewebsites.net';" class="btn btn-outline-primary">Visit Website</button>
+	 </div>
+ </br>
+	</div>
+</br>
+<div class="globwrapper">
+      <div class="glob">
+		  <h3 style="text-align: center">
+			  Azure Integration
+		  </h3>
+         <p>I built this project alongside learning Azure and NodeJS. I spent a lot of my time during this project immersing myself into both of these tools and eventually ended up earning my Azure Fundamentals certification.</br></p>
+	 </div>
+ </div> 
+</div>
+<div id="this" class="page">
+	<h1>
+		This Site
+	</h1>
+	<h4>
+		Connecting me to you!
+	</h4>
+	<h3>
+		<span class="lang">Website</span>
+		<span class="lang">HTML/CSS</span>
+		<span class="lang">Javascript/JQuery</span>
+	</h3>
+	<div class="glob">
+		<p>
+			As I was writing my resume I realised how difficult it was to be able to explain all of my projects in such a formal method. With all of the complexity that you can find in each person I don't feel that limiting all of your professional life to a resume does the applicant nor the employer any favors.
+		</p>
+		<p>
+			I made this website with a personal connection in mind. I hope that you are able to view all of my projects in a way that is enjoyable and informative.
+		</p>
+		<div class="center">
+		 <button type="button" onClick="location.href='https://github.com/keshavbabu/keshavbabu.github.io';" class="btn btn-outline-primary">View on Github</button>
+	 </div>
+ </br>
+	</div>
+</br>
+<div class="globwrapper">
+      <div class="glob">
+		  <h3 style="text-align: center">
+			  Front-End Development
+		  </h3>
+         <p>This website was my way of learning the more advanced aspects of HTML, CSS, and Javascript/JQuery. I built it from scratch hoping to learn as much as possible along the way. My goal is to make it as aesthetic and pleasing to the eye as possible while still being able to deliver all the information somebody would want to know about me. I hope you like it!</br></p>
+	 </div>
+ </div> 
+</div>
+</div>
+	<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+	/*
+	INITIALIZATION
+	*/
+	var pages = $(".page").length;
+	var palette = [[0, 0, 0]]
+	for(var i = 0; i < pages; i++){
+		var color = [];
+		for(var j = 0; j < 3; j++){
+			color.push(Math.floor(Math.random() * (255 - 35 + 1) + 35));
+		}
+		palette.push(color);
+	}
+</script>
+<script>
+	/*
+	MISCELLANEOUS FUNCTIONS
+	*/
+	
+function toggleModal(modal){
+	$(modal).modal('toggle')
+}
+function smoothScroll(page){
+	document.querySelector(page).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+</script>
+<script>
+	/*
+	CAROUSEL
+	*/
+	
+	// Stop the carousel from auto changing
+	$('#carouselExampleControls').carousel({interval: false})
+	
+	//Allow gestures on the carousel from mobile users
+	$('.carousel').on('touchstart', function(event){
+    const xClick = event.originalEvent.touches[0].pageX;
+    $(this).one('touchmove', function(event){
+        const xMove = event.originalEvent.touches[0].pageX;
+        const sensitivityInPx = 5;
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        if( Math.floor(xClick - xMove) > sensitivityInPx ){
+            $(this).carousel('next');
+        }
+        else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+            $(this).carousel('prev');
+        }
+    });
+    $(this).on('touchend', function(){
+        $(this).off('touchmove');
+    });
+});
+</script>
+<script>
+	/*
+	MAIN ANIMATION
+	*/
+	
+	//TODO
+</script>
+<script>
+	/*
+	BACKGROUND ANIMATION
+	*/
+	
+function BackgroundAnimationUpdate(){
+	var height = $(".content").scrollTop(); //current height
+	var total = $('.content')[0].scrollHeight; //height of page
+	var percent = height/total;
+	var page = Math.round(height/(total/pages)); //current page
+	var color = [0, 0, 0];
+	var alpha = Math.pow(Math.cos((height*Math.PI)/1192), 2)*0.8;
+	color = palette[page];
+	$("body .page").css("background-color", "rgba("+ color[0] +","+ color[1] +","+ color[2] +", "+ alpha +")");
+	$(".progresscontainer").css("background-color", "rgba("+ color[0] +","+ color[1] +","+ color[2] +", "+ alpha +")");
+	$(".progressbar").css("width", ((height/(total-1192))*100) + "%");
+}
+</script>
+<script>
+	/*
+	SCROLL EVENTS
+	*/
+	
+$(".content").scroll(function() {
+	BackgroundAnimationUpdate();
+});
+</script>
+</body>
 </html>
+
